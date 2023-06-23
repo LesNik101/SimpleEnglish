@@ -2,7 +2,7 @@
 <mat-sidenav-container>
   <mat-sidenav #sidebar opened="true" mode="side">
     <sidebar-item
-      *ngFor="let sidebarItem of sidebarData; let i = index"
+      *ngFor="let sidebarItem of sidebarData"
       [sidebarItem]="sidebarItem"
     />
   </mat-sidenav>
