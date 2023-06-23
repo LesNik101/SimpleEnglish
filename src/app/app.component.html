@@ -1,1 +1,11 @@
-<app-toolbar />
+<app-toolbar (toggleMenuEvent)="sidebar.toggle()" />
+<mat-sidenav-container>
+  <mat-sidenav #sidebar opened="true" mode="side">
+    <sidebar-item
+      *ngFor="let sidebarItem of sidebarData; let i = index"
+      [sidebarItem]="sidebarItem"
+    />
+  </mat-sidenav>
+
+  <mat-sidenav-content>Main </mat-sidenav-content>
+</mat-sidenav-container>
