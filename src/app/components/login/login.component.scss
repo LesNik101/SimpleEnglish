@@ -1,0 +1,15 @@
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 40px 20px ;
+  min-width: 450px;
+}
+
+.action-button {
+  margin-bottom: 5px;
+}
+
+.networks-container{ 
+  display: flex;
+  justify-content: center;
+}
